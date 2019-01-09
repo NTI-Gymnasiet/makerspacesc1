@@ -1,9 +1,37 @@
 .background  {
     background-color: #170f23;
-    background-image: url('https://raw.githubusercontent.com/NTI-Gymnasiet/makerspacesc1/master/ntig-bg.jpg');
+    /*background-image: url('https://raw.githubusercontent.com/NTI-Gymnasiet/makerspacesc1/master/ntig-bg.jpg');*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     width: 100vw;
     height: 100vh;
+    text-align: center;
+}
+
+.background.landscape, .background.portrait {
+    display: block;
+    position: fixed;
+}
+
+.background.landscape img {
+    width: 100vw;
+    margin-top: -250px;
+    margin-left: -700px;
+    position: fixed;
+    transition: all 100s linear;
+}
+
+.background.portrait img {
+    margin-top: -300px;
+    height: 100vh;
+    position: fixed;
+    transition: all 100s linear;
+}
+
+#logo {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    width: 400px;
 }
